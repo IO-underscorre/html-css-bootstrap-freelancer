@@ -9,6 +9,10 @@
     --paragraph-m-size: 1.375rem;
     --paragraph-s-size: 1.25rem;
     --fine-prints-size: 1.25rem;
+
+    --white-color: #ffffff;
+    --green-color: #1abc9c;
+    --blue-color: #2c3e50;
 }
 
 * {
