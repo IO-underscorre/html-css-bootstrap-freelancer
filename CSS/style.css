@@ -1,13 +1,12 @@
 :root {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-    --navbar-l-size: 1.75rem;
+    --navbar-l-size: 1.125rem;
     --navbar-m-size: 1rem;
-    --heading-xl-size: 4rem;
-    --heading-l-size: 3.25rem;
+    --heading-l-size: 2.25rem;
     --heading-m-size: 1.625rem;
-    --paragraph-m-size: 1.375rem;
-    --paragraph-s-size: 1.25rem;
+    --subheading-size: 1.125rem;
+    --paragraph-size: 1.25rem;
     --fine-prints-size: 1.25rem;
 
     --white-color: #ffffff;
