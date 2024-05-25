@@ -29,3 +29,21 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
+
+
+/* Top navigation bar */
+#top-bar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1.5rem 0;
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    font-size: var(--navbar-l-size);
+    font-weight: 700;
+}
+
+#top-bar menu {
+    margin-bottom: 0;
+    font-size: var(--navbar-m-size);
+}
