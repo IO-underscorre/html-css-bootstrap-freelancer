@@ -21,6 +21,10 @@
     box-sizing: border-box;
 }
 
+ul , menu {
+    list-style: none;
+}
+
 a {
     text-decoration: inherit;
     color: inherit;
