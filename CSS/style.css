@@ -30,13 +30,12 @@ a {
     color: inherit;
 }
 
-
+/* HEADER */
 /* Top navigation bar */
 #top-bar {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 0;
     background-color: var(--blue-color);
     color: var(--white-color);
     font-size: var(--navbar-l-size);
@@ -44,6 +43,5 @@ a {
 }
 
 #top-bar menu {
-    margin-bottom: 0;
     font-size: var(--navbar-m-size);
 }
