@@ -44,3 +44,14 @@ a {
 #top-bar menu {
     font-size: var(--navbar-m-size);
 }
+
+
+
+@media all and (min-width: 992px) {
+    :root {
+        --navbar-l-size: 1.75rem;
+        --heading-l-size: 3.875rem;
+        --heading-m-size: 3.125rem;
+        --subheading-size: 1.625rem;
+    }
+}
