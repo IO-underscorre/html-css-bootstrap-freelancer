@@ -20,6 +20,10 @@
     box-sizing: border-box;
 }
 
+section {
+    padding: 5rem 0;
+}
+
 ul , menu {
     list-style: none;
 }
@@ -28,6 +32,18 @@ a {
     text-decoration: inherit;
     color: inherit;
 }
+
+/* Separator */
+.separator {
+    font-size: 1.25rem;
+}
+
+.separator .line {
+    width: 100%;
+    height: 0.25rem;
+    border-radius: 0.25rem;
+}
+
 
 /* HEADER */
 /* Top navigation bar */
@@ -43,6 +59,29 @@ a {
 
 #top-bar menu {
     font-size: var(--navbar-m-size);
+}
+
+/* Jumbo */
+#jumbo {
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
+
+#jumbo img {
+    width: 15rem;
+}
+
+#jumbo h1 {
+    font-size: var(--heading-l-size);
+}
+
+#jumbo .separator .line {
+    background-color: var(--white-color);
+}
+
+#jumbo span {
+    font-size: var(--subheading-size);
+    font-size: 600;
 }
 
 
