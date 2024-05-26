@@ -5,13 +5,15 @@
     --navbar-m-size: 1rem;
     --heading-l-size: 2.25rem;
     --heading-m-size: 1.625rem;
+    --heading-s-size: 1.125rem;
     --subheading-size: 1.125rem;
     --paragraph-size: 1.25rem;
-    --fine-prints-size: 1.25rem;
+    --fine-prints-size: .875rem;
 
     --white-color: #ffffff;
     --green-color: #1abc9c;
     --blue-color: #2c3e50;
+    --light-blue-color: #3a546d;
 }
 
 * {
@@ -35,12 +37,20 @@ a {
     color: inherit;
 }
 
+a:hover {
+    color: inherit;
+}
+
 h1 {
     font-size: var(--heading-l-size);
 }
 
 h2 {
     font-size: var(--heading-m-size);
+}
+
+h3 {
+    font-size: var(--heading-s-size);
 }
 
 /* Separator */
@@ -58,11 +68,10 @@ h2 {
 .visual-button {
     display: inline-block;
     padding: .5em 1em;
-    border: 2px solid;
+    border: 2px solid var(--white-color);
     border-radius: .375em;
     color: var(--white-color);
     background-color: var(--green-color);
-    border-color: var(--white-color);
 }
 
 .visual-button:hover {
@@ -76,6 +85,36 @@ h2 {
     background-color: var(--blue-color);
     border-color: var(--blue-color);
     box-shadow: inset 0 0 .5em #00000080;
+}
+
+/* Link button */
+.link-button {
+    display: inline-block;
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    border: 2px solid var(--white-color);
+    border-radius: 50%;
+    color: var(--white-color);
+}
+
+.link-button:hover {
+    background-color: var(--white-color);
+    color: var(--blue-color);
+    box-shadow: 0 0 .25em #00000080;
+}
+
+.link-button:active {
+    background-color: var(--blue-color);
+    color: var(--white-color);
+    box-shadow: inset 0 0 .25em #00000080;
+}
+
+.link-button > * {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50% , -50%);
 }
 
 
@@ -150,6 +189,34 @@ main section:nth-child(even) .line {
     height: 8rem;
 }
 
+/* FOOTER */
+footer {
+    color: var(--white-color);
+    background-color: var(--blue-color);
+    text-align: center;
+    padding-bottom: 2.5rem;
+}
+
+/* Info */
+#info {
+    background-color: var(--light-blue-color);
+}
+
+#info .inline-link {
+    color: var(--green-color);
+}
+
+#info .inline-link:hover {
+    color: var(--white-color);
+}
+
+/* Copyright */
+footer small {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: var(--fine-prints-size);
+}
+
 
 
 @media all and (min-width: 992px) {
@@ -157,6 +224,7 @@ main section:nth-child(even) .line {
         --navbar-l-size: 1.75rem;
         --heading-l-size: 3.875rem;
         --heading-m-size: 3.125rem;
+        --heading-s-size: 1.5rem;
         --subheading-size: 1.625rem;
     }
 }
