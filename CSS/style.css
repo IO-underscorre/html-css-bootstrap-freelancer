@@ -22,6 +22,7 @@
 
 section {
     padding: 5rem 0;
+    text-align: center;
 }
 
 ul , menu {
@@ -31,6 +32,14 @@ ul , menu {
 a {
     text-decoration: inherit;
     color: inherit;
+}
+
+h1 {
+    font-size: var(--heading-l-size);
+}
+
+h2 {
+    font-size: var(--heading-m-size);
 }
 
 /* Separator */
@@ -71,17 +80,38 @@ a {
     width: 15rem;
 }
 
-#jumbo h1 {
-    font-size: var(--heading-l-size);
-}
-
-#jumbo .separator .line {
+#jumbo .line {
     background-color: var(--white-color);
 }
 
 #jumbo span {
     font-size: var(--subheading-size);
     font-size: 600;
+}
+
+/* MAIN */
+main section:nth-child(odd) {
+    color: var(--blue-color);
+    background-color: var(--white-color);
+}
+
+main section:nth-child(even) {
+    color: var(--white-color);
+    background-color: var(--green-color);
+}
+
+main section:nth-child(odd) .line {
+    background-color: var(--blue-color);
+}
+
+main section:nth-child(even) .line {
+    background-color: var(--white-color);
+}
+
+/* Portfolio */
+#portfolio img {
+    width: 100%;
+    border-radius: 1rem;
 }
 
 
