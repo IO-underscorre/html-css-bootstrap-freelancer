@@ -140,7 +140,15 @@ main section:nth-child(even) .line {
     border-radius: 1rem;
 }
 
-/* About */
+/* Contact me */
+.text-input {
+    display: inline-block;
+    width: 100%;
+}
+
+.text-input.large {
+    height: 8rem;
+}
 
 
 
