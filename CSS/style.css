@@ -64,26 +64,37 @@ h3 {
     border-radius: 0.25rem;
 }
 
-/* Visual button */
-.visual-button {
-    display: inline-block;
-    padding: .5em 1em;
-    border: 2px solid var(--white-color);
-    border-radius: .375em;
+/* Visual buttons */
+.btn.btn-white {
     color: var(--white-color);
-    background-color: var(--green-color);
+    border-color: var(--white-color);
 }
 
-.visual-button:hover {
-    color: var(--blue-color);
+.btn.btn-white:hover {
+    color: var(--green-color);
     background-color: var(--white-color);
     box-shadow: 0 0 .5em #00000080;
 }
 
-.visual-button:active {
+.btn.btn-white:active {
+    border-color: #00000080;
+    box-shadow: inset 0 0 .5em #00000080;
+}
+
+.btn.btn-green {
     color: var(--white-color);
-    background-color: var(--blue-color);
-    border-color: var(--blue-color);
+    border-color: var(--green-color);
+    background-color: var(--green-color);
+}
+
+.btn.btn-green:hover {
+    box-shadow: 0 0 .5em #00000080;
+}
+
+.btn.btn-green:active {
+    color: var(--white-color);
+    background-color: var(--green-color);
+    border-color: #00000080;
     box-shadow: inset 0 0 .5em #00000080;
 }
 
