@@ -206,9 +206,9 @@ h3 {
     background-color: var(--white-color);
 }
 
-#jumbo span {
+#jumbo strong {
     font-size: var(--subheading-size);
-    font-size: 600;
+    font-weight: 600;
 }
 
 
