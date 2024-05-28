@@ -181,6 +181,7 @@ h3 {
 /* Top navigation bar */
 #top-bar {
     position: fixed;
+    z-index: 50;
     top: 0;
     width: 100%;
     background-color: var(--blue-color);
@@ -233,9 +234,33 @@ main section:nth-child(even) .line {
 }
 
 /* Portfolio */
+#portfolio .add-item span {
+    z-index: 2;
+    opacity: 0;
+    font-size: 5.5rem;
+    color: var(--white-color);
+    transition: .3s all .2s linear;
+}
+
+#portfolio .add-item:hover span {
+    opacity: 1;
+}
+
+#portfolio .add-item div {
+    z-index: 1;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--green-color);
+    transition: all .5s ease-in;
+}
+
+#portfolio .add-item:hover div {
+    opacity: .9;
+}
+
 #portfolio img {
     width: 100%;
-    border-radius: 1rem;
 }
 
 /* FOOTER */
