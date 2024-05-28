@@ -128,6 +128,53 @@ h3 {
     transform: translate(50% , -50%);
 }
 
+/* Inputs */
+.input-full-width {
+    width: 100%;
+    position: relative;
+}
+
+.input-full-width input , .input-full-width textarea {
+    width: inherit;
+    appearance: none;
+    border: 0;
+}
+
+.input-full-width input:hover , .input-full-width textarea:hover {
+    box-shadow: 0 0 .25em #00000080;
+}
+
+.input-full-width input:focus , .input-full-width textarea:focus {
+    box-shadow: 0 0 .25em #00000080;
+}
+
+.input-full-width label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: transform .1s ease-out;
+}
+
+.input-full-width input:focus + label , .input-full-width input:user-valid + label , .input-full-width input:user-invalid + label , 
+.input-full-width textarea:focus + label , .input-full-width textarea:user-valid + label , .input-full-width textarea:user-invalid + label {
+    transform: scale(.75) translate(0 , -85%);
+    transform-origin: .5em center;
+    left: 0;
+    font-weight: 700;
+    background-color: var(--white-color);
+}
+
+.input-full-width input:user-valid + label::after {
+    content: '\2713';
+    color: #00ff00;
+}
+
+.input-full-width input:user-invalid + label::after {
+    content: '\2717';
+    color: #ff0000;
+}
+
 
 /* HEADER */
 /* Top navigation bar */
@@ -188,16 +235,6 @@ main section:nth-child(even) .line {
 #portfolio img {
     width: 100%;
     border-radius: 1rem;
-}
-
-/* Contact me */
-.text-input {
-    display: inline-block;
-    width: 100%;
-}
-
-.text-input.large {
-    height: 8rem;
 }
 
 /* FOOTER */

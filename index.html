@@ -198,33 +198,45 @@
                 </div>
 
                 <div class="row justify-content-center text-start">
-                    <form class="col-8 px-3">
-                        <span class="text-input">
-                            Name
-                        </span>
+                    <form method="post" class="col-8 px-3">
+                        <div class="input-full-width">
+                            <input id="contact-name" type="text" required />
+                            <label for="contact-name">
+                                Name
+                            </label>
+                        </div>
                         
                         <hr>
                         
-                        <span class="text-input">
-                            Email Address
-                        </span>
+                        <div class="input-full-width">
+                            <input id="email-address" type="email" required />
+                            <label for="email-address">
+                                Email Address
+                            </label>
+                        </div>
                         
                         <hr>
-
-                        <span class="text-input">
-                            Phone Number
-                        </span>
+                        
+                        <div class="input-full-width">
+                            <input id="phone-number" type="tel" pattern="[0-9]{10}" required />
+                            <label for="phone-number">
+                                Phone Number
+                            </label>
+                        </div>
 
                         <hr>
-
-                        <span class="text-input large">
-                            Message
-                        </span>
+                        
+                        <div class="input-full-width">
+                            <textarea id="contact-message" rows="5" required></textarea>
+                            <label for="contact-message">
+                                Message
+                            </label>
+                        </div>
                         
                         <hr>
 
                         <button type="submit" class="btn btn-lg btn-green">
-                            Submit
+                            Send
                         </button>
                     </form>
                 </div>
